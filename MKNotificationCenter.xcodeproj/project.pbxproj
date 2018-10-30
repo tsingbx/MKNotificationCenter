@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		A25DE5F621881A110062F536 /* MKNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE5F421881A110062F536 /* MKNotificationCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A25DE60121881A390062F536 /* KBNotificationCenterObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE5FD21881A380062F536 /* KBNotificationCenterObserver.m */; };
-		A25DE60221881A390062F536 /* KBNotificationCenterObserverProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE5FE21881A380062F536 /* KBNotificationCenterObserverProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A25DE60421881A390062F536 /* KBNotificationCenterObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE60021881A380062F536 /* KBNotificationCenterObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25DE608218821920062F536 /* KBNotificationCenterObserver.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE605218821920062F536 /* KBNotificationCenterObserver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25DE609218821920062F536 /* KBNotificationCenterObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = A25DE606218821920062F536 /* KBNotificationCenterObserver.m */; };
+		A25DE60A218821920062F536 /* KBNotificationCenterObserverProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A25DE607218821920062F536 /* KBNotificationCenterObserverProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A25DE5F121881A110062F536 /* MKNotificationCenter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKNotificationCenter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25DE5F421881A110062F536 /* MKNotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKNotificationCenter.h; sourceTree = "<group>"; };
 		A25DE5F521881A110062F536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A25DE5FD21881A380062F536 /* KBNotificationCenterObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBNotificationCenterObserver.m; sourceTree = "<group>"; };
-		A25DE5FE21881A380062F536 /* KBNotificationCenterObserverProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBNotificationCenterObserverProtocol.h; sourceTree = "<group>"; };
-		A25DE60021881A380062F536 /* KBNotificationCenterObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBNotificationCenterObserver.h; sourceTree = "<group>"; };
+		A25DE605218821920062F536 /* KBNotificationCenterObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBNotificationCenterObserver.h; sourceTree = "<group>"; };
+		A25DE606218821920062F536 /* KBNotificationCenterObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KBNotificationCenterObserver.m; sourceTree = "<group>"; };
+		A25DE607218821920062F536 /* KBNotificationCenterObserverProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KBNotificationCenterObserverProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,21 +52,13 @@
 		A25DE5F321881A110062F536 /* MKNotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
-				A25DE5FC21881A380062F536 /* KBNotificationCenterObserver */,
+				A25DE605218821920062F536 /* KBNotificationCenterObserver.h */,
+				A25DE606218821920062F536 /* KBNotificationCenterObserver.m */,
+				A25DE607218821920062F536 /* KBNotificationCenterObserverProtocol.h */,
 				A25DE5F421881A110062F536 /* MKNotificationCenter.h */,
 				A25DE5F521881A110062F536 /* Info.plist */,
 			);
 			path = MKNotificationCenter;
-			sourceTree = "<group>";
-		};
-		A25DE5FC21881A380062F536 /* KBNotificationCenterObserver */ = {
-			isa = PBXGroup;
-			children = (
-				A25DE5FD21881A380062F536 /* KBNotificationCenterObserver.m */,
-				A25DE5FE21881A380062F536 /* KBNotificationCenterObserverProtocol.h */,
-				A25DE60021881A380062F536 /* KBNotificationCenterObserver.h */,
-			);
-			path = KBNotificationCenterObserver;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -76,9 +68,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25DE60421881A390062F536 /* KBNotificationCenterObserver.h in Headers */,
 				A25DE5F621881A110062F536 /* MKNotificationCenter.h in Headers */,
-				A25DE60221881A390062F536 /* KBNotificationCenterObserverProtocol.h in Headers */,
+				A25DE608218821920062F536 /* KBNotificationCenterObserver.h in Headers */,
+				A25DE60A218821920062F536 /* KBNotificationCenterObserverProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,7 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A25DE60121881A390062F536 /* KBNotificationCenterObserver.m in Sources */,
+				A25DE609218821920062F536 /* KBNotificationCenterObserver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
